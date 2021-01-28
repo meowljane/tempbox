@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Can anybody find me?</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div id="box">
+
+<div id="frame"></div>
+<img src="/labyrinth/upload/quest/2674/1611242785154/다운로드.png" id="mag" width="32" height="32">
+<iframe id="maze" src="https://meowljane.github.io/tempbox/wordmaze/" frameborder="0" scrolling="no" width="320px" height="320px"></iframe>
+</div>
+
+
+<style>
+#frame
+{
+position:absolute;
+width:880px;
+height:880px;
+z-index:3;
+border: 320px solid black;
+pointer-events: none;
+transition: 0.5s;
+}
+
+#maze { position:absolute;
+transition: 0.5s;
+margin-left:19%;
+margin-top:19%;}
+
+#box
+{position : relative;
+margin-top:50px;
+transform:translate(-300px, -280px);}
+
+#mag{position : fixed;
+transform:translate(425px, 280px);
+z-index:5;}
+
+#mag:hover + #maze { position:absolute;
+-ms-zoom: 2.7;
+-moz-transform: scale(2.7);
+-moz-transform-origin: 50% 50%;
+-o-transform: scale(2.7);
+-o-transform-origin: 50% 50%;
+-webkit-transform: scale(2.7);
+-webkit-transform-origin: 50% 50%;}
+
+.play-ad-div{display:none;}
+
+</style>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
